@@ -1,17 +1,21 @@
 
-// initialize kaboom context
-const k = kaboom();
-
-// define a scene
-k.scene("main", () => {
 
     // add a text at position (100, 100)
-    k.add([
-        k.text("ohhimark", 32),
-        k.pos(100, 100),
+    add([
+        text("ohhimark", 32),
+        pos(100, 100),
     ]);
+    const download = add([
+      sprite("download"),
+      pos(50,50)
+    ]);
+    
+    add([
+      sprite("foo"),
+      pos(50,50)
+    ])
+    add([
+      sprite("testing"),
+      pos(50,50)
+    ])
 
-});
-
-// start the game
-k.start("main");
